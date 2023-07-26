@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-raleway;
+  }
+
+  footer {
+    @apply border-t-[1px] border-t-slate-400;
+  }
+}
+
+@layer components {
+  .part-title {
+    @apply text-3xl font-bold text-center mb-5;
+  }
+
+  .part-sub-title {
+    @apply font-semibold text-sm text-center;
+  }
+
+  .card {
+    @apply border border-slate-300;
+  }
+
+  .card .card-img-bg {
+    @apply w-full h-48 bg-ijo;
+  }
+
+  .card .card-body {
+    @apply py-3 px-5;
+  }
+
+  .card .card-body .card-title {
+    @apply text-center text-2xl font-bold;
+  }
+
+  .button-black {
+    @apply bg-gelap px-5 py-3 text-white rounded-full font-bold hover:bg-white hover:text-gelap hover:border hover:border-gelap;
+  }
+
+  .socmed-logo {
+    @apply w-12 h-12 mr-3 p-2 flex justify-center items-center border border-ijo text-ijo hover:text-gelap;
+  }
+
+  .portofolio-wrapper {
+    @apply flex flex-wrap justify-center w-full lg:w-10/12 mx-auto;
+  }
+
+  .portofolio-wrapper .portofolio-card {
+    @apply w-full lg:w-1/2 mb-2 p-8;
+  }
+
+  .portofolio-badge {
+    @apply p-2 bg-ijo text-white text-sm cursor-pointer hover:bg-white hover:border hover:border-ijo hover:text-ijo transition;
+  }
+
+  .divider {
+    @apply py-3 px-10 border-t-[1px]  text-lg text-center lg:text-start;
+  }
+}
